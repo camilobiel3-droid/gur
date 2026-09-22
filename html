@@ -1,0 +1,68 @@
+Index.html
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPet - Seu Pet Shop Online</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; color: #333; }
+        .share-container { background: white; max-width: 600px; margin: 2rem auto; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #2ecc71; margin-bottom: 1rem; font-size: 2rem; }
+        p { color: #666; margin-bottom: 1.5rem; line-height: 1.6; }
+        .link-section { background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .link-section h2 { color: #2ecc71; font-size: 1.2rem; margin-bottom: 1rem; }
+        .copy-link { display: flex; align-items: center; gap: 0.5rem; background: white; padding: 1rem; border: 2px solid #2ecc71; border-radius: 5px; margin-bottom: 1rem; }
+        .copy-link input { flex: 1; border: none; outline: none; font-size: 1rem; padding: 0.5rem; }
+        .copy-btn { background: #2ecc71; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+        .copy-btn:hover { background: #27ae60; }
+        .social-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 1.5rem 0; }
+        .social-btn { padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; text-decoration: none; transition: transform 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .social-btn:hover { transform: translateY(-2px); }
+        .whatsapp { background: #25d366; color: white; }
+        .facebook { background: #1877f2; color: white; }
+        .email { background: #ea4335; color: white; }
+        .contact-card { background: #e8f8f5; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem; border-left: 4px solid #2ecc71; }
+        .contact-info-item { margin: 0.8rem 0; display: flex; align-items: center; gap: 0.5rem; }
+        .contact-info-item strong { color: #2ecc71; }
+        .highlight { background: #fff3cd; padding: 1rem; border-radius: 5px; margin: 1rem 0; border-left: 4px solid #ffc107; }
+    </style">
+            <h2>📱 Compartilhe com Seus Amigos</h2>
+            <div class="copy-link">
+                <input type="text" id="siteLink" value="https://camilobiel3-droid.github.io/agro" readonly>
+                <button class="copy-btn" onclick="copiarLink()">Copiar</button>
+            </div>
+        </div>
+
+        <div class="social-buttons">
+            <a href="https://api.whatsapp.com/send?text=Confira%20o%20novo%20site%20da%20AgroPet%20-%20Pet%20Shop%20com%20grande%20variedade!%20https://camilobiel3-droid.github.io/agro" target="_blank" class="social-btn whatsapp">
+                💬 WhatsApp
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://camilobiel3-droid.github.io/agro" target="_blank" class="social-btn facebook">
+                f Facebook
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <h3 style="margin-top: 0;">📞 Entre em Contato</h3>
+            <div class="contact-info-item">
+                <strong>Telefone:</strong> (13) 3...
+            </div>
+            <div class="contact-info-item">
+                <strong>Serviços:</strong> Banho, Tosa, Consultório e Muito Mais!
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copiarLink() {
+            const link = document.getElementById('siteLink');
+            link.select();
+            document.execCommand('copy');
+            alert('Link copiado com sucesso!');
+        }
+    </script>
+</body>
+</html>
